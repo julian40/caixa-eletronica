@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eltronica</title>
+
+</head>
+
+<body>
+    <input type="text" id="valor">
+    <button onclick="sacar();">sacar</button>
+    <div class="div1" id="valor"></div>
+</body>
+<script>
+    function sacar()
+    {
+        v = valor.value;
+        v = parseInt(v); //conversão para inteiro
+        if (v%10 == 0);
+        {
+            quantidade = v / 10;
+            //estrutura de repetição:
+            for (x=1;x<=quantidade;x++);
+
+            {
+                div1.innerHTML += "<br> <img src='notas.jpg' width='100px'>";
+            }
+
+        }
+        else
+        {
+            alert('valor incorreto')
+        }
+
+    }
+</script>
+
+</html>
